@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("./fonts/static/Outfit-Thin.ttf");
+  }
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("./fonts/static/Outfit-Light.ttf");
+  }
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("./fonts/static/Outfit-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("./fonts/static/Outfit-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("./fonts/static/Outfit-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("./fonts/static/Outfit-Black.ttf");
+  }
+  @font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("./fonts/static/Outfit-ExtraBold.ttf");
+  }
+}
