@@ -9,6 +9,7 @@ export default {
         primary: "#84119E",
         danger: "#B1187C",
         pink: " rgba(215, 29, 97, 0.6)",
+        purple: "#7040F2",
       },
       backgroundImage: {
         linear:
@@ -34,6 +35,22 @@ export default {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
+      keyframes: {
+        "bounce-x": {
+          "0%, 100%": {
+            transform: "translateX(-5%)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateX(0)",
+            "animation-timing-function": 'cubic - bezier(0, 0, 0.2, 1)',
+          },
+        },
+        
+      },
+      animation:{
+        'bounce-x':'bounce-x 1s ease-in-out infinite',
+      }
     },
   },
   plugins: [],

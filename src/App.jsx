@@ -1,6 +1,8 @@
 import './App.css'
 import Header from './components/Header'
 import home_main from './assets/images/home-main.png'
+import home_big from './assets/images/home-big.png'
+import home_small from './assets/images/home-small.png'
 import { Link } from 'react-router-dom'
 
 function App() {
@@ -8,12 +10,12 @@ function App() {
   return (
     <>
       <Header />
-      <main className='bg-[#09090A]'>
+      {/* <main className='bg-[#09090A]'>
         <section className="home pt-[136px] pb-[20px] relative">
           <div className="w-[450px] h-[392px] rounded-full absolute top-[84px] left-[46px] bg-pink blur-large"></div>
-          <div className="container flex justify-between items-start">
+          <div className="container flex justify-between items-stretch">
             <div className='flex flex-col justify-center items-start relative'>
-              <svg className='absolute -top-[40px] left-[130px]' width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='absolute top-[48px] left-[130px] animate-bounce ' width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="8.48535" width="12" height="12" transform="rotate(-45 0 8.48535)" fill="url(#paint0_linear_1_92)" />
                 <defs>
                   <linearGradient id="paint0_linear_1_92" x1="6" y1="8.48535" x2="6" y2="20.4854" gradientUnits="userSpaceOnUse">
@@ -22,7 +24,7 @@ function App() {
                   </linearGradient>
                 </defs>
               </svg>
-              <svg className='absolute -top-[51px] -right-[45px]' width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='absolute top-0 -right-[45px] animate-pulse' width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2" d="M35.7444 55.3441L55.3431 35.7455L48.1702 8.9728L21.3975 1.79986L1.79884 21.3985L8.97281 48.1702L35.7444 55.3441Z" stroke="url(#paint0_linear_1_52)" strokeWidth="2" strokeMiterlimit="10" />
                 <defs>
                   <linearGradient id="paint0_linear_1_52" x1="25.9454" y1="65.1432" x2="2.5918" y2="2.69807" gradientUnits="userSpaceOnUse">
@@ -32,6 +34,17 @@ function App() {
                   </linearGradient>
                 </defs>
               </svg>
+              <svg className='absolute bottom-[91px] left-[50%] -translate-x-[50%] animate-bounce' width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="8.48535" width="12" height="12" transform="rotate(-45 0 8.48535)" fill="url(#paint0_linear_1_93)" />
+                <defs>
+                  <linearGradient id="paint0_linear_1_93" x1="6" y1="8.48535" x2="6" y2="20.4854" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#F68080" />
+                    <stop offset="1" stopColor="#FF9494" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <img src={home_big} alt="home image" className="absolute bottom-[144px] -right-[28px] border border-dashed border-purple p-[5px] rounded-full animate-pulse" />
+              <img src={home_small} alt="home image" className='absolute bottom-[111px] right-[123px] border border-dashed border-purple p-[5px] rounded-full after:w-[145px] after:height-[145px] animate-pulse' />
 
               <div className="max-w-[759px] text-6xl leading-20 font-bold font-outfit">Discover, collect, and sell extraordinary
                 <span className='bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent'>NFTs</span>
@@ -56,7 +69,7 @@ function App() {
             </div>
             <div className='relative'>
               <img className='w-full' src={home_main} alt="Home Main" />
-              <svg className='absolute top-[50%] -left-[83px] -translate-y-[50%]' width="166" height="166" viewBox="0 0 166 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='absolute top-[35%] -translate-y-[50%] -left-[83px] animate-bounce-x' width="166" height="166" viewBox="0 0 166 166" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_1_64)">
                   <circle cx="83" cy="79" r="43" fill="#05021D" />
                 </g>
@@ -84,7 +97,7 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
+      </main> */}
     </>
   )
 }
