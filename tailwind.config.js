@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        laptop: "1390px",
+      },
       colors: {
         "nav-color": "#04011C",
         "body-color": "#09090A",
@@ -43,14 +46,22 @@ export default {
           },
           "50%": {
             transform: "translateX(0)",
-            "animation-timing-function": 'cubic - bezier(0, 0, 0.2, 1)',
+            "animation-timing-function": "cubic - bezier(0, 0, 0.2, 1)",
           },
         },
-        
+        spin: {
+          "0%, 100%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: ".5",
+          },
+        },
       },
-      animation:{
-        'bounce-x':'bounce-x 1s ease-in-out infinite',
-      }
+      animation: {
+        "bounce-x": "bounce-x 1s ease-in-out infinite",
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   plugins: [],

@@ -11,12 +11,12 @@ const Header = () => {
                 <div className="container">
                     <div className="nav-wrapper flex justify-between items-center">
                         <a href="#" className="flex items-center justify-center"><img src={logo} alt="Logo" /></a>
-                        <div className={`w-[300px] h-[100vh] lg:h-auto lg:w-[70%] xl:w-[60%] p-5 lg:p-0 bg-nav-color absolute top-[84px] left-0 lg:static flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-4 lg:gap-0 delay-300 ${!isOpen ? '-left-[100%]' : ''}`}>
+                        <div className={`absolute top-[84px] left-0 lg:static w-[300px] h-[100vh] lg:h-auto lg:w-[70%] xl:w-[60%] p-5 lg:p-0 bg-nav-color  flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-4 lg:gap-0 -translate-x-[100%] lg:translate-x-[0] transition duration-300 ${isOpen ? 'translate-x-[0]' : '-translate-x-[100%]'}`}>
                             <ul id="nav-mobile" className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-[36px]">
-                                <li className='hover:text-primary'><a href="#!">Explore</a></li>
-                                <li className='hover:text-primary'><a href="#!">Stats</a></li>
-                                <li className='hover:text-primary'><a href="#!">Drops</a></li>
-                                <li className='hover:text-primary'><a href="#!">Activity</a></li>
+                                <li className='transition delay-150 duration-300 ease-in-out hover:text-primary'><a href="#!">Explore</a></li>
+                                <li className='transition delay-150 duration-300 ease-in-out hover:text-primary'><a href="#!">Stats</a></li>
+                                <li className='transition delay-150 duration-300 ease-in-out hover:text-primary'><a href="#!">Drops</a></li>
+                                <li className='transition delay-150 duration-300 ease-in-out hover:text-primary'><a href="#!">Activity</a></li>
                             </ul>
                             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[20px]">
                                 <form className='relative'>

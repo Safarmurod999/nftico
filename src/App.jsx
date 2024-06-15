@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <Header />
-      {/* <main className='bg-[#09090A]'>
+      <main className='bg-[#09090A]'>
         <section className="home pt-[136px] pb-[20px] relative">
           <div className="w-[450px] h-[392px] rounded-full absolute top-[84px] left-[46px] bg-pink blur-large"></div>
           <div className="container flex justify-between items-stretch">
             <div className='flex flex-col justify-center items-start relative'>
-              <svg className='absolute top-[48px] left-[130px] animate-bounce ' width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='absolute top-[48px] left-[80px] lg:left-[130px] animate-bounce ' width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="8.48535" width="12" height="12" transform="rotate(-45 0 8.48535)" fill="url(#paint0_linear_1_92)" />
                 <defs>
                   <linearGradient id="paint0_linear_1_92" x1="6" y1="8.48535" x2="6" y2="20.4854" gradientUnits="userSpaceOnUse">
@@ -24,7 +24,7 @@ function App() {
                   </linearGradient>
                 </defs>
               </svg>
-              <svg className='absolute top-0 -right-[45px] animate-pulse' width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='absolute top-0 right-[80px] laptop:-right-[45px] animate-spin' width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2" d="M35.7444 55.3441L55.3431 35.7455L48.1702 8.9728L21.3975 1.79986L1.79884 21.3985L8.97281 48.1702L35.7444 55.3441Z" stroke="url(#paint0_linear_1_52)" strokeWidth="2" strokeMiterlimit="10" />
                 <defs>
                   <linearGradient id="paint0_linear_1_52" x1="25.9454" y1="65.1432" x2="2.5918" y2="2.69807" gradientUnits="userSpaceOnUse">
@@ -43,10 +43,15 @@ function App() {
                   </linearGradient>
                 </defs>
               </svg>
-              <img src={home_big} alt="home image" className="absolute bottom-[144px] -right-[28px] border border-dashed border-purple p-[5px] rounded-full animate-pulse" />
-              <img src={home_small} alt="home image" className='absolute bottom-[111px] right-[123px] border border-dashed border-purple p-[5px] rounded-full after:w-[145px] after:height-[145px] animate-pulse' />
-
-              <div className="max-w-[759px] text-6xl leading-20 font-bold font-outfit">Discover, collect, and sell extraordinary
+              <img src={home_big} alt="home image" className="absolute bottom-[144px] right-[40px] laptop:-right-[28px] border border-purple p-[10px] rounded-full animate-pulse" />
+              <img src={home_small} alt="home image" className='max-w-[85px] absolute bottom-[111px] right-[180px] laptop:right-[123px] border border-purple p-[10px] rounded-full after:w-[145px] after:height-[145px] animate-pulse' />
+              <svg className="absolute bottom-[151px] right-[40px] laptop:-right-[21px] rounded-full animate-pulse" width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="68.2127" cy="68.7586" r="67.5" transform="rotate(17.4029 68.2127 68.7586)" stroke="#7040F2" strokeDasharray="3 3" />
+              </svg>
+              <svg className='absolute bottom-[116px] right-[180px] laptop:right-[129px] animate-pulse' width="75" height="75" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37.8925" cy="37.733" r="36.9872" transform="rotate(17.4029 37.8925 37.733)" stroke="#7040F2" strokeOpacity="0.69" strokeDasharray="3 3" />
+              </svg>
+              <div className="max-w-[759px] text-xl md:text-3xl lg:text-5xl xl:text-6xl leading-20 font-bold font-outfit">Discover, collect, and sell extraordinary
                 <span className='bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent'>NFTs</span>
               </div>
               <p className='max-w-[621px] text-2xl font-light leading-[37.44px] mt-[20px] '>
@@ -97,7 +102,7 @@ function App() {
             </div>
           </div>
         </section>
-      </main> */}
+      </main>
     </>
   )
 }
