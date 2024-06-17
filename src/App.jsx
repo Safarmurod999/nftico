@@ -11,9 +11,11 @@ import CountUp from 'react-countup'
 import Shadow from './components/Shadow'
 import Title from './components/Title'
 import DropList from './components/DropList'
+import Filter from './components/Filter'
+import { useState } from 'react'
 
 function App() {
-
+  const [active, setActive] = useState(1);
   return (
     <>
       <Header />
@@ -21,7 +23,7 @@ function App() {
 
         {/* Hero Section */}
         <section className="home pt-[136px] pb-[20px] relative">
-          <Shadow style={'top-[84px] left-[46px]'}/>
+          <Shadow style={'top-[84px] left-[46px]'} />
           <div className="container flex flex-col lg:flex-row gap-5 justify-between items-stretch">
             <div className='flex flex-col justify-center items-start relative z-1'>
               <svg className='absolute -top-[20px]  sm:top-[48px] left-[80px] lg:left-[130px] animate-bounce ' width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +150,18 @@ function App() {
             <Title>
               Selected notable drops
             </Title>
-            <DropList/>
+            <DropList />
+          </div>
+        </section>
+
+        {/* Collections */}
+        <section className='pt-[50px] md:pt-[168px] pb-[132px]'>
+          <Shadow style={'top-[88px] right-[2px]'} />
+          <div className="container flex items-center justify-between">
+            <Title style={'text-start'}>
+              Top collections
+            </Title>
+            <Filter active={active} setActive={setActive} />
           </div>
         </section>
       </main>

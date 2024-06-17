@@ -3,7 +3,7 @@ import icons from '../assets/images/icons.svg';
 
 const DropCard = ({ image, title, price, likes }) => {
     return (
-        <div className="flex flex-col z-10 p-6 sm:p-4 md:p-6 bg-[#1E1B33] rounded-2xl gap-[24px]">
+        <div className="flex flex-col z-10 p-6 sm:p-4 md:p-6 bg-[#1E1B33] rounded-xl gap-[24px]">
             <img src={image} alt={title} className='w-full' />
             <div className='flex items-center justify-between w-full'>
                 <h3 className='text-2xl leading-[28px]'>{title}</h3>
