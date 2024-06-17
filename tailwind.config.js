@@ -13,6 +13,8 @@ export default {
         danger: "#B1187C",
         pink: " rgba(215, 29, 97, 0.6)",
         purple: "#7040F2",
+        linear:
+        "linear-gradient(90deg, rgba(5, 0, 250, 1) 12%, rgba(224, 30, 90, 1) 100%)",
       },
       backgroundImage: {
         linear:
@@ -60,8 +62,11 @@ export default {
       },
       animation: {
         "bounce-x": "bounce-x 1s ease-in-out infinite",
-        "spin-slow": "spin 3s linear infinite",
+        "spin-slow": "spin 4s linear infinite",
       },
+      borderRadius:{
+        '2xl':'24px'
+      }
     },
   },
   plugins: [],
