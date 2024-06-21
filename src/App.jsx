@@ -13,6 +13,7 @@ import Title from './components/Title'
 import DropList from './components/DropList'
 import Filter from './components/Filter'
 import { useState } from 'react'
+import CollectionList from './components/CollectionList'
 
 function App() {
   const [active, setActive] = useState(1);
@@ -56,8 +57,8 @@ function App() {
               </svg>
               <img src={home_big} alt="home image" className="absolute z-0 bottom-[144px] right-[40px] laptop:-right-[28px] border border-purple p-[10px] rounded-full hidden md:flex animate-pulse" />
               <img src={home_small} alt="home image" className='max-w-[85px] z-0 absolute bottom-[111px] right-[180px] laptop:right-[123px] border border-purple p-[10px] hidden md:flex rounded-full after:w-[145px] after:height-[145px] animate-pulse' />
-              <div className="max-w-full lg:max-w-[759px] w-full text-4xl sm:text-5xl xl:text-6xl leading-20 font-bold font-outfit z-1 text-center lg:text-start">Discover, collect, and sell extraordinary
-                <span className='bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent'>NFTs</span>
+              <div className="max-w-full lg:max-w-[759px] w-full text-4xl leading-auto sm:text-5xl xl:text-6xl lg:leading-20 font-bold font-outfit z-1 text-center lg:text-start">Discover, collect, and sell extraordinary
+                <span className='bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent'> NFTs</span>
               </div>
               <Typography style={'text-center lg:text-start mx-auto lg:mx-0'}>
                 Our marketplace is the world’s first and
@@ -144,7 +145,7 @@ function App() {
         </section>
 
         {/* Drops */}
-        <section className='pt-[50px] md:pt-[168px] pb-[132px] relative'>
+        <section className='pt-[50px] md:pt-[168px] pb-[50px] lg:pb-[132px] relative'>
           <Shadow style={'top-[88px] right-[2px]'} />
           <div className="container">
             <Title>
@@ -155,13 +156,16 @@ function App() {
         </section>
 
         {/* Collections */}
-        <section className='pt-[50px] md:pt-[168px] pb-[132px]'>
+        <section className='pt-[50px] pb-[132px]'>
           <Shadow style={'top-[88px] right-[2px]'} />
-          <div className="container flex items-center justify-between">
+          <div className="container flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0">
             <Title style={'text-start'}>
               Top collections
             </Title>
             <Filter active={active} setActive={setActive} />
+          </div>
+          <div className="container">
+            <CollectionList />
           </div>
         </section>
       </main>
