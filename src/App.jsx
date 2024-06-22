@@ -14,6 +14,7 @@ import DropList from './components/DropList'
 import Filter from './components/Filter'
 import { useState } from 'react'
 import CollectionList from './components/CollectionList'
+import TrendingList from './components/TrendingList'
 
 function App() {
   const [active, setActive] = useState(1);
@@ -166,6 +167,17 @@ function App() {
           </div>
           <div className="container">
             <CollectionList />
+          </div>
+        </section>
+
+        {/* Trending */}
+        <section className='pt-[50px] pb-[132px]'>
+          <Shadow style={'top-[88px] right-[2px]'} />
+          <div className="container">
+            <Title>
+              Trending NFTs
+            </Title>
+            <TrendingList />
           </div>
         </section>
       </main>

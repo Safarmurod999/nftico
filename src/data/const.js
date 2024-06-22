@@ -13,6 +13,10 @@ import collection_7 from "../assets/images/collection-7.svg";
 import collection_8 from "../assets/images/collection-8.svg";
 import collection_9 from "../assets/images/collection-9.svg";
 
+import trending_1 from "../assets/images/trending-1.png";
+import trending_2 from "../assets/images/trending-2.png";
+import trending_3 from "../assets/images/trending-3.png";
+import trending_4 from "../assets/images/trending-4.png";
 
 export const dropArray = [
   {
@@ -117,5 +121,72 @@ export const collectionArray = [
     eth: "2.9K",
     increase: 10.0,
     img: collection_9,
+  },
+];
+
+export const trendingArray = [
+  {
+    id: 0,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_1,
+    price: 0,
+  },
+  {
+    id: 1,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_2,
+    price: 0,
+  },
+  {
+    id: 2,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_3,
+    price: 0,
+  },
+  {
+    id: 3,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_4,
+    price: 32,
+  },
+  {
+    id: 4,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_1,
+    price: 0,
+  },
+  {
+    id: 5,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_2,
+    price: 0,
+  },
+  {
+    id: 6,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_3,
+    price: 0,
+  },
+  {
+    id: 7,
+    owner: "Ya Chin-Ho",
+    profession: "Venture Capitalist",
+    bid: 2.835,
+    img: trending_4,
+    price: 32,
   },
 ];

@@ -2,7 +2,7 @@ import React from 'react'
 
 const CollectionCard = ({ name, img, price, increase,eth }) => {
     return (
-        <li className='p-[1px] rounded-xl bg-[#E7E7E766]'>
+        <li className='p-[1px] rounded-xl bg-[#E7E7E766] hover:bg-linear hover:cursor-pointer'>
             <div className="w-full h-full p-[20px] rounded-xl bg-[#1E1B33] flex items-center justify-between gap-[12px]">
                 <div>
                     <img src={img} alt="image" className="object-cover rounded-lg" />
