@@ -9,6 +9,12 @@ import bg_2 from './assets/images/bg-2.png'
 import resources_1 from './assets/icons/resources-1.png'
 import resources_2 from './assets/icons/resources-2.png'
 import resources_3 from './assets/icons/resources-3.png'
+import create from './assets/images/create.png'
+import clients_1 from './assets/icons/clients-1.svg'
+import clients_2 from './assets/icons/clients-2.svg'
+import clients_3 from './assets/icons/clients-3.svg'
+import clients_4 from './assets/icons/clients-4.svg'
+import clients_5 from './assets/icons/clients-5.svg'
 // React
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -23,9 +29,11 @@ import Filter from './components/Filter'
 import CollectionList from './components/CollectionList'
 import TrendingList from './components/TrendingList'
 import ResourceCard from './components/ResourceCard'
+import BrowserList from './components/BrowseList'
 
 function App() {
   const [active, setActive] = useState(1);
+  const [current, setCurrent] = useState(1);
   return (
     <>
       <Header />
@@ -212,12 +220,57 @@ function App() {
                   avatar={resources_2}
                 />
                 <ResourceCard
-                  img={bg_1}
+                  img={bg_2}
                   title={'The  Marketplace isn’t working'}
                   avatar={resources_3}
                 />
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Browse */}
+        <section className='pt-[30px] laptop:pt-[50px] pb-6 lg:pb-[132px]'>
+          <div className="container">
+            <Title>
+              Browse popular NFTs
+            </Title>
+            <BrowserList />
+          </div>
+        </section>
+
+        {/* Create */}
+        <section className='pt-[30px] laptop:pt-[50px] pb-[132px]'>
+          <div className="container flex flex-col lg:flex-row justify-between gap-4">
+            <div className='min-w-auto md:min-w-[466px] lg:min-w-auto mx-auto lg:mx-0 max-w-[500px]'>
+              <img src={create} alt="Bg image" className='w-full' />
+            </div>
+            <div className="max-w-[755px] mx-auto lg:mx-0 flex flex-col justify-center items-center lg:items-start text-center lg:text-start">
+              <div className='text-[30px] md:text-[44px] leading-[52px] font-medium mb-[28px]'>
+                Create, Sell well & Collect Your Best Very Fast NFTs.
+              </div>
+              <p className='text-[18px] leading-8 text-[#C0C0C0]'>
+                Create, Sell well & Collect Your Best Very Fast NFTs.
+                The purpose of lorem ipsum is to create a natural
+                looking block of text (sentence, paragraph, page, etc.)
+                that doesn't distract from the layout. A practice not
+                without controversy, laying out pages with meaningless
+              </p>
+              <button className='w-fit mt-6 px-5 py-3 rounded-lg bg-linear'>
+                Connect Wallet
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Clients */}
+        <section className='pt-[30px] laptop:pt-[50px] pb-[132px]'>
+          <div className="container clients flex justify-between items-center gap-[50px] overflow-x-scroll">
+            <img src={clients_1} alt="clients" />
+            <img src={clients_2} alt="clients" />
+            <img src={clients_3} alt="clients" />
+            <img src={clients_4} alt="clients" />
+            <img src={clients_5} alt="clients" />
           </div>
         </section>
       </main>

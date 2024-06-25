@@ -5,6 +5,17 @@
   color: #fff;
 }
 
+.clients::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just to be sure */
+}
+
+/* For Firefox */
+.clients {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
 .container {
   max-width: 1350px !important;
   padding: 0 20px;

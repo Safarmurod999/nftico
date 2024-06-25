@@ -18,6 +18,9 @@ import trending_2 from "../assets/images/trending-2.png";
 import trending_3 from "../assets/images/trending-3.png";
 import trending_4 from "../assets/images/trending-4.png";
 
+import browse_1 from "../assets/images/browse-1.png";
+import browse_2 from "../assets/images/browse-2.png";
+
 export const dropArray = [
   {
     id: 0,
@@ -196,5 +199,36 @@ export const trendingArray = [
     likes: 32,
     img: trending_4,
     price: 32,
+  },
+];
+
+export const browseArray = [
+  {
+    id: 0,
+    title: "Election Season",
+    price: "17.59",
+    likes: 24,
+    image: browse_1,
+  },
+  {
+    id: 1,
+    title: "Art jobs",
+    price: "12.99",
+    likes: 15,
+    image: drop_1,
+  },
+  {
+    id: 2,
+    title: "Election Season",
+    price: "19.99",
+    likes: 10,
+    image: trending_2,
+  },
+  {
+    id: 3,
+    title: "NFT jobs",
+    price: "13.99",
+    likes: 14,
+    image: browse_2,
   },
 ];
