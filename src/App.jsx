@@ -3,6 +3,14 @@ import './App.css'
 import home_main from './assets/images/home-main.png'
 import home_big from './assets/images/home-big.png'
 import home_small from './assets/images/home-small.png'
+import resources from './assets/images/resources.png'
+import bg_1 from './assets/images/bg-1.png'
+import bg_2 from './assets/images/bg-2.png'
+import resources_1 from './assets/icons/resources-1.png'
+import resources_2 from './assets/icons/resources-2.png'
+import resources_3 from './assets/icons/resources-3.png'
+// React
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 // Components
 import Header from './components/Header'
@@ -12,9 +20,9 @@ import Shadow from './components/Shadow'
 import Title from './components/Title'
 import DropList from './components/DropList'
 import Filter from './components/Filter'
-import { useState } from 'react'
 import CollectionList from './components/CollectionList'
 import TrendingList from './components/TrendingList'
+import ResourceCard from './components/ResourceCard'
 
 function App() {
   const [active, setActive] = useState(1);
@@ -171,13 +179,45 @@ function App() {
         </section>
 
         {/* Trending */}
-        <section className='pt-[50px] pb-[132px]'>
+        <section className='pt-[50px] pb-[132px] relative'>
           <Shadow style={'top-[88px] right-[2px]'} />
           <div className="container">
             <Title>
               Trending NFTs
             </Title>
             <TrendingList />
+          </div>
+        </section>
+
+        {/* Resources */}
+        <section className='pt-[30px] laptop:pt-[50px] pb-[132px] relative'>
+          <Shadow style={'top-[88px] left-[2px]'} />
+          <div className="container">
+            <Title>
+              Resources for getting started
+            </Title>
+            <div className="grid grid-cols-1  laptop:grid-cols-2 gap-6 mt-[60px]">
+              <div className='w-full relative'>
+                <img src={resources} alt="Resources bg" className='w-full' />
+                <ResourceCard
+                  style={'static mt-6 md:absolute bottom-[20px] laptop:-bottom-[63px] left-[32px] right-[32px]'}
+                  title={'The Seven Secrets I should have received NFTs. '}
+                  avatar={resources_1}
+                />
+              </div>
+              <div className='w-full grid grid-cols-1 lg:grid-cols-2 laptop:grid-cols-1 grid-rows-1 laptop:grid-rows-2 gap-6'>
+                <ResourceCard
+                  img={bg_1}
+                  title={'I think I minted duplicate NFTs'}
+                  avatar={resources_2}
+                />
+                <ResourceCard
+                  img={bg_1}
+                  title={'The  Marketplace isn’t working'}
+                  avatar={resources_3}
+                />
+              </div>
+            </div>
           </div>
         </section>
       </main>

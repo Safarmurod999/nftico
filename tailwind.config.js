@@ -11,10 +11,11 @@ export default {
         "body-color": "#09090A",
         primary: "#84119E",
         danger: "#B1187C",
+        card: "#1E1B33",
         pink: " rgba(215, 29, 97, 0.6)",
         purple: "#7040F2",
         linear:
-        "linear-gradient(90deg, rgba(5, 0, 250, 1) 12%, rgba(224, 30, 90, 1) 100%)",
+          "linear-gradient(90deg, rgba(5, 0, 250, 1) 12%, rgba(224, 30, 90, 1) 100%)",
       },
       backgroundImage: {
         linear:
@@ -64,9 +65,9 @@ export default {
         "bounce-x": "bounce-x 1s ease-in-out infinite",
         "spin-slow": "spin 4s linear infinite",
       },
-      borderRadius:{
-        '2xl':'24px'
-      }
+      borderRadius: {
+        "2xl": "24px",
+      },
     },
   },
   plugins: [],
