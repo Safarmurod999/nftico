@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         laptop: "1390px",
+        tablet: "900px",
       },
       colors: {
         "nav-color": "#04011C",

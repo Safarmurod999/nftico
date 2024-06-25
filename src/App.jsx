@@ -30,6 +30,7 @@ import CollectionList from './components/CollectionList'
 import TrendingList from './components/TrendingList'
 import ResourceCard from './components/ResourceCard'
 import BrowserList from './components/BrowseList'
+import Footer from './components/Footer'
 
 function App() {
   const [active, setActive] = useState(1);
@@ -240,7 +241,7 @@ function App() {
         </section>
 
         {/* Create */}
-        <section className='pt-[30px] laptop:pt-[50px] pb-[132px]'>
+        <section className='pt-[30px] laptop:pt-[50px]  pb-[40px] laptop:pb-[132px]'>
           <div className="container flex flex-col lg:flex-row justify-between gap-4">
             <div className='min-w-auto md:min-w-[466px] lg:min-w-auto mx-auto lg:mx-0 max-w-[500px]'>
               <img src={create} alt="Bg image" className='w-full' />
@@ -264,7 +265,7 @@ function App() {
         </section>
 
         {/* Clients */}
-        <section className='pt-[30px] laptop:pt-[50px] pb-[132px]'>
+        <section className='pt-[30px] laptop:pt-[50px] pb-[80px]'>
           <div className="container clients flex justify-between items-center gap-[50px] overflow-x-scroll">
             <img src={clients_1} alt="clients" />
             <img src={clients_2} alt="clients" />
@@ -273,6 +274,9 @@ function App() {
             <img src={clients_5} alt="clients" />
           </div>
         </section>
+
+        {/* Footer */}
+        <Footer />
       </main>
     </>
   )
